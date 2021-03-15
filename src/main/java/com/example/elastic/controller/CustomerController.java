@@ -26,14 +26,14 @@ public class CustomerController {
     public Optional<Customer> findByID(@PathVariable String id){
         return customerRepository.findById(id);
     }
-    @GetMapping("/findByFName/{firstName}")
-    public List<Customer> findByFirstName(@PathVariable String firstName) {
-        return customerRepository.findByFirstName(firstName);
-    }
-    @GetMapping("/findByLName/{lastName}")
-    public List<Customer> findByLastName(@PathVariable String lastName) {
-        return customerRepository.findByLastName(lastName);
-    }
+//    @GetMapping("/findByFName/{firstName}")
+//    public List<Customer> findByFirstName(@PathVariable String firstName) {
+//        return customerRepository.findByFirstName(firstName);
+//    }
+//    @GetMapping("/findByLName/{lastName}")
+//    public List<Customer> findByLastName(@PathVariable String lastName) {
+//        return customerRepository.findByLastName(lastName);
+//    }
     @GetMapping("/findByAbc/{abc}")
     public List<Customer> findByLen(@PathVariable String abc) {
         return customerRepository.findByLenHo(abc);
